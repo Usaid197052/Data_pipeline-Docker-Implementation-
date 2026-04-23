@@ -4,7 +4,7 @@ import os
 
 print("Starting API data fetch...")
 
-# API URL
+
 url = "https://jsonplaceholder.typicode.com/posts"
 
 response = requests.get(url)
@@ -16,7 +16,7 @@ else:
     print("API request failed")
     exit()
 
-# Path setup
+
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 PROJECT_ROOT = os.path.dirname(BASE_DIR)
 
@@ -24,7 +24,7 @@ raw_path = os.path.join(PROJECT_ROOT, "data", "raw", "api_data.csv")
 
 os.makedirs(os.path.dirname(raw_path), exist_ok=True)
 
-# Save file
+
 df.to_csv(raw_path, index=False)
 
 print("API data saved successfully.")
