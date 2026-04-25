@@ -3,7 +3,6 @@ import pymysql
 import os
 
 print("Starting MySQL load...")
-
 connection = pymysql.connect(
     host="host.docker.internal",
     user="root",
