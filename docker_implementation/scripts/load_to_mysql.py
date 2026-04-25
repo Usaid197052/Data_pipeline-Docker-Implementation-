@@ -13,7 +13,6 @@ cursor = connection.cursor()
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 PROJECT_ROOT = os.path.dirname(BASE_DIR)
 processed_path = os.path.join(PROJECT_ROOT, "data", "processed", "cleaned_api_data.csv")
-
 df = pd.read_csv(processed_path)
 print("Data loaded.")
 
