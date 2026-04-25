@@ -17,7 +17,6 @@ processed_path = os.path.join(PROJECT_ROOT, "data", "processed", "cleaned_api_da
 df = pd.read_csv(processed_path)
 print("Data loaded.")
 
-
 cursor.execute("""
 CREATE TABLE IF NOT EXISTS api_data (
     userId INT,
