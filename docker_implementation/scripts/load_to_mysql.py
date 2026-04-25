@@ -8,7 +8,6 @@ connection = pymysql.connect(
     user="root",
     password="usaid123",
     database="week3_db")
-
 cursor = connection.cursor()
 
 
