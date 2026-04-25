@@ -10,7 +10,6 @@ connection = pymysql.connect(
     database="week3_db")
 cursor = connection.cursor()
 
-
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 PROJECT_ROOT = os.path.dirname(BASE_DIR)
 
