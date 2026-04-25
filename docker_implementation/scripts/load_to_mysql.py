@@ -40,8 +40,6 @@ for _, row in df.iterrows():
     ))
 
 connection.commit()
-
 print("Data loaded into MySQL successfully.")
-
 cursor.close()
 connection.close()
