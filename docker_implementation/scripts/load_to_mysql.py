@@ -9,8 +9,7 @@ connection = pymysql.connect(
     host="host.docker.internal",
     user="root",
     password="usaid123",
-    database="week3_db"
-)
+    database="week3_db")
 
 cursor = connection.cursor()
 
